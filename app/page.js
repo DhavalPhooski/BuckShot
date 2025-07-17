@@ -196,13 +196,13 @@ export default function Game() {
     const isPlayerTurn = (isHost && currentPlayerTurn === 1) || (!isHost && currentPlayerTurn === 2)
     
     if (!isPlayerTurn) {
-      setMessage('Not your turn!')
+      setMessage("Not your turn!")
       return
     }
 
     const bullets = [...gameData.game_state.current_bullets]
     if (bullets.length === 0) {
-      setMessage('No bullets left!')
+      setMessage("No bullets left!")
       return
     }
 
