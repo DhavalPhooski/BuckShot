@@ -1,4 +1,4 @@
-// app/page.js
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 'use client'
 import { useState, useEffect } from 'react'
 import { createClient } from '@supabase/supabase-js'
@@ -518,7 +518,7 @@ export default function Game() {
 
         {gs.game_status === 'playing' && !isPlayerTurn && (
           <div style={{ marginBottom: '20px' }}>
-            <h3>Waiting for opponent's turn...</h3>
+            <h3>Waiting for opponent s turn...</h3>
           </div>
         )}
 
